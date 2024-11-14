@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #FFFFFF" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.sql_connect.adminController">
+    <left>
+        <VBox spacing="15" style="-fx-padding: 20; -fx-background-color: #000000;">
+            <Button onAction="#showProfileForm" style="-fx-background-color: #FFFFFF; -fx-text-fill: #000000; -fx-font-size: 14px; -fx-pref-width: 150; -fx-padding: 10;" text="View Profile" />
+            <Button onAction="#showAddLecturerForm" style="-fx-background-color: #FFFFFF; -fx-text-fill: #000000; -fx-font-size: 14px; -fx-pref-width: 150; -fx-padding: 10;" text="Add Lecturer" />
+            <Button onAction="#showAddAcademicYearForm" style="-fx-background-color: #FFFFFF; -fx-text-fill: #000000; -fx-font-size: 14px; -fx-pref-width: 150; -fx-padding: 10;" text="Add Academic Year" />
+            <Button onAction="#showAddSemesterForm" style="-fx-background-color: #FFFFFF; -fx-text-fill: #000000; -fx-font-size: 14px; -fx-pref-width: 150; -fx-padding: 10;" text="Add Semester" />
+            <Button onAction="#showAddModuleForm" style="-fx-background-color: #FFFFFF; -fx-text-fill: #000000; -fx-font-size: 14px; -fx-pref-width: 150; -fx-padding: 10;" text="Add Module" />
+            <Button onAction="#showAddClassForm" style="-fx-background-color: #FFFFFF; -fx-text-fill: #000000; -fx-font-size: 14px; -fx-pref-width: 150; -fx-padding: 10;" text="Add Class" />
+            <Button onAction="#showAddStudentForm" style="-fx-background-color: #FFFFFF; -fx-text-fill: #000000; -fx-font-size: 14px; -fx-pref-width: 150; -fx-padding: 10;" text="Add Student" />
+            <Button onAction="#showAssignLectureForm" style="-fx-background-color: #FFFFFF; -fx-text-fill: #000000; -fx-font-size: 14px; -fx-pref-width: 150; -fx-padding: 10;" text="Assign Lecture" />
+            <Button onAction="#viewAll" style="-fx-background-color: #FFFFFF; -fx-text-fill: #000000; -fx-font-size: 14px; -fx-pref-width: 150; -fx-padding: 10;" text="View All" />
+         <Button fx:id="btnlogout" mnemonicParsing="false" onAction="#Logout" prefHeight="46.0" prefWidth="148.0" style="-fx-background-color: red;" text="Logout" textFill="WHITE">
+            <font>
+               <Font name="Tahoma Bold" size="14.0" />
+            </font>
+         </Button>
+        </VBox>
+    </left>
+    <center>
+        <StackPane fx:id="formContainer" style="-fx-padding: 20; -fx-background-color: #F0F0F0;">
+            <!-- The forms will be loaded here -->
+        </StackPane>
+    </center>
+</BorderPane>

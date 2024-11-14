@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sql_connect.LoginController">
+    <children>
+        <Label layoutX="406.0" layoutY="196.0" text="Username:" />
+        <TextField fx:id="usernameField" layoutX="493.0" layoutY="192.0" promptText="Username" />
+
+        <Label layoutX="408.0" layoutY="255.0" text="Password:" />
+        <PasswordField fx:id="passwordField" layoutX="493.0" layoutY="251.0" promptText="Password" />
+
+        <Button layoutX="539.0" layoutY="308.0" onAction="#handleLogin" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: black;" text="Login" textFill="#f8f8f8">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font></Button>
+        <Label fx:id="statusLabel" layoutX="30.0" layoutY="210.0" textFill="red" />
+      <AnchorPane layoutX="2.0" layoutY="-1.0" prefHeight="408.0" prefWidth="337.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="202.0" fitWidth="291.0" layoutX="14.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Lim_Kok_Wing.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="7.0" layoutY="237.0" prefHeight="34.0" prefWidth="306.0" style="-fx-background-color: black;" text=" Limkokwing University of Creativity  Technology " textFill="#f2ebeb">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="271.0" prefHeight="42.0" prefWidth="266.0" text="              Accademic Reporting System" textFill="#fcf8f8">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="377.0" prefHeight="17.0" prefWidth="266.0" text="© 2024 Limkokwing University Version 1.0" textFill="#575353" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btncancel" layoutX="423.0" layoutY="308.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #c9c0c0;" text="Cancel">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="419.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/illustration.jpg" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

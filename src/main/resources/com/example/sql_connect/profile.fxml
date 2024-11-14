@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="280.0" prefWidth="466.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sql_connect.profileController">
+    <children>
+        <Label layoutX="150.0" layoutY="20.0" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Admin Profile" />
+
+        <Label layoutX="30.0" layoutY="70.0" text="User ID: " />
+        <Label fx:id="userIdLabel" layoutX="100.0" layoutY="70.0" />
+
+        <Label layoutX="30.0" layoutY="100.0" text="Username: " />
+        <Label fx:id="usernameLabel" layoutX="100.0" layoutY="100.0" />
+
+        <Label layoutX="30.0" layoutY="130.0" text="Password: " />
+        <Label fx:id="passwordLabel" layoutX="100.0" layoutY="130.0" />
+
+        <!-- Add the missing nameLabel here -->
+        <Label layoutX="30.0" layoutY="160.0" text="Name: " />
+        <Label fx:id="nameLabel" layoutX="100.0" layoutY="160.0" />
+
+        <ImageView fitHeight="109.0" fitWidth="149.0" layoutX="303.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/imgbin-computer-icons-user-profile-avatar-profile-LJbrar10nYY8mYWt0CUXZ8CxE.jpg" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
